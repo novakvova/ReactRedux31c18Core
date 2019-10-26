@@ -103,6 +103,7 @@ namespace DefaultBeaver
                     spa.UseReactDevelopmentServer(npmScript: "start");
                 }
             });
+            SeederDB.SeedData(app.ApplicationServices, env, this.Configuration);
         }
     }
 }
